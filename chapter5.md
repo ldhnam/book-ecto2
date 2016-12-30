@@ -13,7 +13,7 @@ Trong khi truy vấn thông qua prefix được thiết kế với 2 ngữ cản
 
 ## Global Prefixes
 
-Cùng bắt đầu với một ví dụ đơn giản: ứng dụng của bạn phải truy suất tới một prefix cụ thể khi chạy trên production. Sự giới hạn này vì những điều kiện trong cấu trúc hạ tầng của hệ thống, phân quyền trong databbase và những yêu cầu cái khác.
+Cùng bắt đầu với một ví dụ đơn giản: ứng dụng của bạn phải truy xuất tới một prefix cụ thể khi chạy trên production. Sự giới hạn này vì những điều kiện trong cấu trúc hạ tầng của hệ thống, phân quyền trong databbase và những yêu cầu khác.
 
 Để bắt đầu chúng ta sẽ định nghĩa `repository` and `schema`:
 
@@ -228,7 +228,7 @@ end
 
 ## Schema prefixes
 
-Cuối cùng, Ecto 2.1 thêm vào khả năng gán cho một prefix cụ thể khi chạy trên schema. Tưởng tượng bạn đang xây dựng một ứng dụng đa đối tượng. Mỗi đối tượng dữ liệu thuộc về một prefix xác định, như là "client_foo", "client_bar". Ứng dụng của bạn có thể vẫn phụ thuộc vào một tập các bảng được chia sẽ trên toàn đối tượng. Một trong các bảng có thể được xác định trước cho đối tượng nào đó với prefix. Giả sử bạn muốn lưu dữ liệu với prefix "main".
+Cuối cùng, Ecto 2.1 thêm vào khả năng gán cho một prefix cụ thể khi chạy trên schema. Tưởng tượng bạn đang xây dựng một ứng dụng đa đối tượng. Mỗi đối tượng dữ liệu thuộc về một prefix xác định, như là "client_foo", "client_bar". Ứng dụng của bạn có thể vẫn phụ thuộc vào một tập các bảng được chia sẻ trên toàn đối tượng. Một trong các bảng có thể được xác định trước cho đối tượng nào đó với prefix. Giả sử bạn muốn lưu dữ liệu với prefix "main".
 
 ```elixir
 defmodule Mapp.Mapping do
@@ -254,4 +254,4 @@ Ecto 2.0 cung cấp nhiều công cụ để thao tác với câu truy vấn có
 global prefixes > schema prefix > query/struct prefixes
 ```
 
-Điều này cho phép delopever có thể dùng trong nhiều ngữ cảnh khác nhau, từ những yêu của production cho đến những ứng dụng đa đối tượng. Hành trình của chúng ta trong việc khám phá câu cấu trúc truy vấn đã gần kết thúc. Tiếp theo và là chương truy vấn cuối cùng là aggregates và subqueries.
+Điều này cho phép developer có thể dùng trong nhiều ngữ cảnh khác nhau, từ những yêu của production cho đến những ứng dụng đa đối tượng. Hành trình của chúng ta trong việc khám phá câu cấu trúc truy vấn đã gần kết thúc. Tiếp theo và là chương truy vấn cuối cùng là aggregates và subqueries.
