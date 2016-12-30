@@ -13,7 +13,7 @@ Trong khi truy vấn thông qua prefix được thiết kế với 2 ngữ cản
 
 ## Global Prefixes
 
-Cùng bắt đầu với một ví dụ đơn giản: ứng dụng của bạn phải truy xuất tới một prefix cụ thể khi chạy trên production. Sự giới hạn này vì những điều kiện trong cấu trúc hạ tầng của hệ thống, phân quyền trong databbase và những yêu cầu khác.
+Cùng bắt đầu với một ví dụ đơn giản: ứng dụng của bạn phải truy xuất tới một prefix cụ thể khi chạy trên production. Sự giới hạn này vì những điều kiện trong cấu trúc hạ tầng của hệ thống, phân quyền trong database và những yêu cầu khác.
 
 Để bắt đầu chúng ta sẽ định nghĩa `repository` and `schema`:
 
